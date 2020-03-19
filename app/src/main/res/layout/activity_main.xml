@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/images" />
+        <Button
+            android:id="@+id/chooseImage"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rec_gradient"
+            android:drawableLeft="@drawable/icon_camera"
+            android:text="Choose Image" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/imgDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Recipe Name"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/DescriptionID"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_below="@+id/ImageNameEditText"
+                android:layout_marginTop="30dp"
+                android:hint="Recipe Description"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/Ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_below="@+id/ImageNameEditText"
+                android:layout_marginTop="30dp"
+                android:hint="Ingredients"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_below="@+id/img_description"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rec_gradient"
+            android:drawableLeft="@drawable/icon_upload"
+            android:text="Upload Recipe" />
+
+
+
+    </LinearLayout>
+</ScrollView>
